@@ -1,11 +1,19 @@
-import React from 'react'
+import CreateAccountDrawer from "@/components/create_account_drawer";
+import React from "react";
 
-const Dashboard = () => {
-  return (
-    <div>
-      Dashboard page
+function DashboardPage() {
+    return <div className="px-5">
+        {/* Budget Progress */}
+
+        {/* Overview */}
+
+        {/* Accounts grid */}
+        <div>
+            <CreateAccountDrawer>
+
+            </CreateAccountDrawer>
+        </div>
     </div>
-  )
 }
 
-export default Dashboard
+export default DashboardPage
