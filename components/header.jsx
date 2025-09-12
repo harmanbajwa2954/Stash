@@ -15,6 +15,7 @@ const Header = () => {
             alt='Stash Logo'
             height={60}
             width={200}
+            priority
             className='h-11 w-auto object-contain ' />
         </Link>
 
