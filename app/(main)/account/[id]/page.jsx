@@ -1,14 +1,12 @@
-"use client";
-
 import { getAccountWithTransactions } from '@/actions/accounts'
 import { notFound } from 'next/navigation'
 import React, { Suspense } from 'react'
 import TransactionsTable from '../components/transactions-table'
-import { BarLoader } from 'react-spinners'
+import { BarLoader } from 'react-spinners';
 
-const AccountsPage = async ({ params }) => {
-
-    const accountData = await getAccountWithTransactions(params.id)
+export default async function AccountsPage({params}){
+    // const {id} = await props.params;
+    const accountData = await getAccountWithTransactions(params.id);
     if (!accountData) {
         notFound();
     }
@@ -40,5 +38,3 @@ const AccountsPage = async ({ params }) => {
     </div>
 
 }
-
-export default AccountsPage
