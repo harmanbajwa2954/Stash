@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect } from 'react'
-import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle, } from "@/components/ui/card"
+import { Card,  CardContent, CardFooter, CardHeader, CardTitle, } from "@/components/ui/card"
 import { Switch } from '@/components/ui/switch';
 import { ArrowDownRight, ArrowUpRight } from 'lucide-react';
 import Link from 'next/link';
