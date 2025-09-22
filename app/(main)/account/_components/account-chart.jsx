@@ -109,7 +109,7 @@ const AccountChart = ({ transactions }) => {
                             }}>
                             <CartesianGrid strokeDasharray="3 3" vertical={false}/>
                             <XAxis dataKey="date" />
-                            <YAxis fontSize={12} tickLine={false} axisLine={false} tickFormatter={(value)=> `$${value}`}/>
+                            <YAxis fontSize={12} tickLine={false} axisLine={false} tickFormatter={(value)=> `₹${value}`}/>
                             <Tooltip />
                             <Legend />
                             <Bar dataKey="income" name="Income" fill="#22c55e" radius={[4,4,0,0]}  />

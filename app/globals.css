@@ -134,6 +134,9 @@
   .gradient-text{
     @apply bg-gradient-to-br from-purple-400 to-blue-100 text-xl font-bold tracking-tighter text-transparent bg-clip-text;
   }
+  .gradient-button{
+    @apply bg-gradient-to-r from-blue-600 to-pink-600
+  }
 
   .hero-image-wrapper{
     perspective: 800px;
