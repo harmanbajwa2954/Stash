@@ -16,7 +16,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import React, { useEffect } from 'react'
 import { useForm } from 'react-hook-form';
 import { toast } from 'sonner';
-import ReceiptScanner from '../../account/_components/reciept-scanner';
+import ReceiptScanner from './reciept-scanner';
 
 const AddTransactionForm = ({ accounts, categories, editMode = false, initialData = null }) => {
     const { register, setValue, handleSubmit, formState: { errors }, watch, getValues, reset } =
@@ -26,6 +26,7 @@ const AddTransactionForm = ({ accounts, categories, editMode = false, initialDat
                 type: initialData.type,
                 amount: initialData.amount.toString(),
                 description: initialData.description,
+                accountId: initialData.account,
                 category: initialData.category,
                 date: new Date(initialData.date),
                 isReccuring: initialData.isReccuring,
@@ -232,7 +233,7 @@ const AddTransactionForm = ({ accounts, categories, editMode = false, initialDat
                 <Button type="submit" className={"w-full sm:w-auto flex items-center justify-center gap-2"} disabled={transactionLoading}>
                     {transactionLoading ? (<>
                     <Loader2 className="h-4 w-4 animate-spin" />
-                    <span>{editMode ? "Updating...":"Creating...<"}</span>
+                    <span>{editMode ? "Updating...":"Creating..."}</span>
                 </>
                 ) : editMode ?("Update Transaction") :(
                     "Create Transaction"

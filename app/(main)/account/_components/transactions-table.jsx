@@ -232,9 +232,9 @@ const TransactionsTable = ({ transactions }) => {
                                                 </Button>
                                             </DropdownMenuTrigger>
                                             <DropdownMenuContent>
-                                                <DropdownMenuLabel onClick={() => {
+                                                <DropdownMenuItem className={"cursor-pointer"} onClick={() => {
                                                     router.push(`/transactions/create?edit=${transactions.id}`)
-                                                }}>Edit</DropdownMenuLabel>
+                                                }}>Edit</DropdownMenuItem>
                                                 <DropdownMenuSeparator />
                                                 <DropdownMenuItem className={"text-destructive cursor-pointer"} onClick={() => deleteFn([transactions.id])}>Delete</DropdownMenuItem>
                                             </DropdownMenuContent>
