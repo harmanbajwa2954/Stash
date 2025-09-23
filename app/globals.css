@@ -134,9 +134,6 @@
   .gradient-text{
     @apply bg-gradient-to-br from-purple-400 to-blue-100 text-xl font-bold tracking-tighter text-transparent bg-clip-text;
   }
-  .gradient-button{
-    @apply bg-gradient-to-r from-blue-600 to-pink-600
-  }
 
   .hero-image-wrapper{
     perspective: 800px;
@@ -148,6 +145,23 @@
   }
   .hero-image.scrolled{
     transform: rotateX(0deg) scale(1) translateY(40px);
+  }
+
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
   }
 
 }
