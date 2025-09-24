@@ -103,7 +103,6 @@ export async function seedTransactions() {
       message: `Created ${transactions.length} transactions`,
     };
   } catch (error) {
-    console.error("Error seeding transactions:", error);
     return { success: false, error: error.message };
   }
 }

@@ -124,7 +124,7 @@
 
 @layer utilities{
   .gradient{
-    @apply bg-gradient-to-br from-blue-600 to-[#8d63e7];
+    @apply bg-gradient-to-br from-blue-600 to-[#6545ac];
   }
 
   

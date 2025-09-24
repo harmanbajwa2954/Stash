@@ -13,7 +13,6 @@ export async function sendEmail({ to, subject, react }) {
         });
         return {success: true,data};
     } catch (error) {
-        console.log("Failed Sending Email" , error)
         return {success: false, error}
     }
 }
