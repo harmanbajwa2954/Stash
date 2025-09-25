@@ -20,9 +20,17 @@ export default function RootLayout({ children }) {
           <main className="min-h-screen">{children}</main>
           <Toaster richColors />
 
-          <footer className="bg-blue-50 py-12">
+          <footer className="bg-blue-50 py-8">
             <div className="container mx-auto px-4 text-center text-gray-600">
-              <p>Made with ❤️ by Harman Bajwa</p></div>
+              <p>Copyright 2025&copy; Stash - All Rights Reserved.</p>
+              <p className="text-xs text-muted-foreground">Developed by Harmanpreet Singh</p>
+            </div>
+            <div className="container mx-auto px-4 text-center text-muted-foreground mt-4">
+              <span>Contact Me: </span>
+              <a className="text-blue-400 mx-2" href="mailto:harmanbajwa012005@gmail.com">Email</a>
+              <a className="text-blue-400 mx-2" href="https://github.com/harmanbajwa2954" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a className="text-blue-400 mx-2" href="https://linkedin.com/in/harmanpreet-singh-804746273" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
           </footer>
         </body>
       </html>

@@ -95,7 +95,7 @@ const DashboardOverview = ({ accounts, transactions }) => {
                                         </div>
                                         <div >
                                             <div className={cn("flex items-center", transaction.type === "EXPENSE"
-                                                ? "text-red-500" : "text-green-500"
+                                                ? "text-red-400" : "text-green-400"
                                             )}>
                                                 {transaction.type === "EXPENSE" ? (
                                                     <ArrowDownRight className='mr-1 h-4 w-4' />
@@ -140,4 +140,4 @@ const DashboardOverview = ({ accounts, transactions }) => {
     )
 }
 
-export default DashboardOverview
+export default DashboardOverview;
