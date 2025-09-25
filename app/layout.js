@@ -10,6 +10,7 @@ export const metadata = {
   title: "Stash - Your Financial Partner",
   description: "Ready to reach your financial goals? Stash is the easy-to-use expense tracker that helps you save money with confidence. See where your money goes and start growing your stash today!",
 };
+export const runtime = "nodejs";
 
 export default function RootLayout({ children }) {
   return (
